@@ -1,0 +1,28 @@
+<!-- 
+	@project: dotGame
+	@author: xkotori
+
+	All rights reversed, rights also belongs to project and author.
+-->
+
+<meta>
+	<!-- Resource info -->
+	<info author="xkotori" version="1.0.0" name="dotGame Roleplay - MySQL Database" description="MySQL Database" type="script" />
+
+	<!-- Resource settings -->
+	<oop>true</oop>
+
+	<!-- Libraries -->
+	<script src="libraries/Classlib.lua" type="shared" cache="false" />
+	<script src="libraries/Singleton.lua" type="shared" cache="false" />
+
+	<!-- Client scripts -->
+	<script src="server/main.lua" type="server" />
+
+	<!-- Export functions -->
+	<export function="query" type="server" />
+	<export function="queryFree" type="server" />
+	<export function="queryAsync" type="server" />
+	<export function="getRows" type="server" />
+	<export function="getSingleRow" type="server" />
+</meta>

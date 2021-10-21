@@ -1,0 +1,42 @@
+<!-- 
+	@project: dotGame
+	@author: xkotori
+
+	All rights reversed, rights also belongs to project and author.
+-->
+
+<meta>
+	<!-- Resource info -->
+	<info author="xkotori" version="1.0.0" name="dotGame Roleplay - Logowanie" description="Logowanie" type="script" />
+
+	<!-- Resource settings -->
+	<oop>true</oop>
+
+	<!-- Libraries -->
+	<script src="libraries/Classlib.lua" type="shared" cache="false" />
+	<script src="libraries/Singleton.lua" type="shared" cache="false" />
+
+	<!-- Client scripts -->
+	<!-- All useful functions -->
+	<script src="client/utils.lua" type="client" cache="false" />
+	<script src="client/animations.lua" type="client" cache="false" />
+	
+	<!-- Controllers -->
+	<script src="client/controllers/Camera.lua" type="client" cache="false" />
+	<script src="client/controllers/Textures.lua" type="client" cache="false" />
+	<script src="client/controllers/Music.lua" type="client" />
+
+	<!-- Tabs -->
+	<script src="client/tabs/Intro.lua" type="client" cache="false" />
+	<script src="client/controllers/Tabs.lua" type="client" cache="false" />
+
+	<!-- Main login panel -->
+	<script src="client/renderer.lua" type="client" />
+
+	<!-- Assets -->
+	<!-- Images -->
+	<file src="assets/images/logo.png" />
+
+	<!-- Music -->
+	<file src="assets/sounds/intro.mp3" />
+</meta>

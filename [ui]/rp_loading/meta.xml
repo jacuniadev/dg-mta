@@ -1,0 +1,37 @@
+<!-- 
+	@project: dotGame
+	@author: xkotori
+
+	All rights reversed, rights also belongs to project and author.
+-->
+
+<meta>
+	<!-- Resource info -->
+	<info author="xkotori" version="1.0.0" name="dotGame Roleplay - Loading screen" description="Loading screen" type="script" />
+
+	<!-- Resource settings -->
+	<download_priority_group>100</download_priority_group>
+	<oop>true</oop>
+
+	<!-- Libraries -->
+	<script src="libraries/Classlib.lua" type="shared" cache="false" />
+	<script src="libraries/Singleton.lua" type="shared" cache="false" />
+
+	<!-- Client scripts -->
+	<script src="client/animations.lua" type="client" cache="false" />
+	<script src="client/screen.lua" type="client" cache="false" />
+
+	<!-- Assets -->
+	<!-- Images -->
+	<file src="assets/images/background.png" type="client" />
+	<file src="assets/images/loader.png" type="client" />
+	<file src="assets/images/logo.png" type="client" />
+
+	<!-- Export functions -->
+	<export function="state" type="client" />
+	<export function="show" type="client" />
+	<export function="destroy" type="client" />
+	<export function="updateText" type="client" />
+	<export function="setProgressBarEnabled" type="client" />
+	<export function="updateProgressBar" type="client" />
+</meta>
