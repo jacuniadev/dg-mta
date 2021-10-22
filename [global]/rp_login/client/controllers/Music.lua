@@ -8,7 +8,11 @@
 Music = inherit(Singleton)
 
 function Music:constructor()
-	self.MUSIC_PATH = "assets/sounds/intro.mp3" -- v.h.s porter master.wav
+	self.MUSIC_PLAYLIST = {
+		{PATH = "assets/sounds/intro.mp3"},
+		{PATH = "assets/sounds/intro_gtaw.mp3"},
+		{PATH = "assets/sounds/intro_prince.mp3"},
+	}
 	self.MUSIC_VOLUME = 1
 
 	self.MUSIC_LOOP = true
@@ -20,7 +24,9 @@ end
 
 function Music:play()
 	if not self.MUSIC then
-		self.MUSIC = File.exists(self.MUSIC_PATH) and Sound(self.MUSIC_PATH) or false
+		local MUSIC = self.MUSIC_PLAYLIST[math.floor(math.random(1, #self.MUSIC_PLAYLIST))].PATH
+
+		self.MUSIC = File.exists(MUSIC) and Sound(MUSIC) or false
 
 		if self.MUSIC and isElement(self.MUSIC) then
 			self.MUSIC:setVolume(self.MUSIC_VOLUME)

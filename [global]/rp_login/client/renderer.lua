@@ -63,6 +63,8 @@ function renderer:render()
 		showChat(false)
 	end
 
+	RESOURCE_GUI:drawBlackWhiteRectangle(0, 0, screenW, screenH)
+	
 	Tabs:render()
 end
 -- Koniec klasy

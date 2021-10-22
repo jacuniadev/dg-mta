@@ -39,4 +39,6 @@
 
 	<!-- Music -->
 	<file src="assets/sounds/intro.mp3" />
+	<file src="assets/sounds/intro_prince.mp3" />
+	<file src="assets/sounds/intro_gtaw.mp3" />
 </meta>

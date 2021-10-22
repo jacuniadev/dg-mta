@@ -14,6 +14,8 @@ function IntroTab:constructor()
 	self.TEXTURES = {
 		logo = Textures:getTexture("logo")
 	}
+	self.SCALE = 50
+
 	self.LOGO_SIZE = 423/scale
 	self.LOGO_POS = Vector2((screenW - self.LOGO_SIZE) / 2, (screenH - self.LOGO_SIZE) / 2)
 end

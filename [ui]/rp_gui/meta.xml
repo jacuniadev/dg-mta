@@ -19,8 +19,12 @@
 
 	<!-- Client scripts -->
 	<script src="client/fonts.lua" type="client" cache="false" />
+	<script src="client/blackwhite.lua" type="client" />
 
 	<!-- Assets -->
+	<!-- Effects -->
+	<file src="assets/effects/blackwhite.fx" type="client" />
+
 	<!-- Fonts -->
 	<file src="assets/fonts/regular.ttf" type="client" />
 	<file src="assets/fonts/bold.otf" type="client" />
@@ -28,6 +32,8 @@
 	<file src="assets/fonts/light.otf" type="client" />
 
 	<!-- Export functions -->
+	<!-- BW functions -->
+	<export function="drawBlackWhiteRectangle" type="client" />
 
 	<!-- Fonts functions -->
 	<export function="getFont" type="client" />
