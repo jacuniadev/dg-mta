@@ -28,6 +28,7 @@
 
 	<!-- Tabs -->
 	<script src="client/tabs/Intro.lua" type="client" cache="false" />
+	<script src="client/tabs/Main.lua" type="client" cache="false" />
 	<script src="client/controllers/Tabs.lua" type="client" cache="false" />
 
 	<!-- Main login panel -->
@@ -38,7 +39,5 @@
 	<file src="assets/images/logo.png" />
 
 	<!-- Music -->
-	<file src="assets/sounds/intro.mp3" />
 	<file src="assets/sounds/intro_prince.mp3" />
-	<file src="assets/sounds/intro_gtaw.mp3" />
 </meta>

@@ -9,8 +9,6 @@ Music = inherit(Singleton)
 
 function Music:constructor()
 	self.MUSIC_PLAYLIST = {
-		{PATH = "assets/sounds/intro.mp3"},
-		{PATH = "assets/sounds/intro_gtaw.mp3"},
 		{PATH = "assets/sounds/intro_prince.mp3"},
 	}
 	self.MUSIC_VOLUME = 1
